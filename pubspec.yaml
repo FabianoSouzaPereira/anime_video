@@ -73,7 +73,23 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/dogcup.png
-    - assets/images/dogclothes.png
+    - assets/images/a_Queda.png
+    - assets/images/abracadabra.png
+    - assets/images/adão_Negro.png
+    - assets/images/afera.png
+    - assets/images/amaquinainfernal.png
+    - assets/images/atena.png
+    - assets/images/aterrorizante.png
+    - assets/images/blackout.png
+    - assets/images/gemini.png
+    - assets/images/gerdia.png
+    - assets/images/kili.png
+    - assets/images/memedomal.png
+    - assets/images/orfa_2.png
+    - assets/images/pinoquio.png
+    - assets/images/secreto.png
+    - assets/images/trem_bala_fit.png
+    - assets/images/trem_bala.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

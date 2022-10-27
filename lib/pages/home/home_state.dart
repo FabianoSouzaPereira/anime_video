@@ -18,95 +18,176 @@ class HomePageState extends State<HomePage> {
 
     final appBar = AppBar(
       backgroundColor: Colors.transparent,
-      title: const Text('Despesas Pessoais'),
+      title: const Text('Anime Vídeo'),
       actions: [],
     );
 
+    var list = [
+      SizedBox(
+        child: Image.asset(
+          width: MediaQuery.of(context).size.width * 1.0,
+          height: MediaQuery.of(context).size.height * 0.6,
+          'assets/images/abracadabra.png',
+          fit: BoxFit.fill,
+          alignment: Alignment.center,
+          filterQuality: FilterQuality.high,
+        ),
+      ),
+      GestureDetector(
+        onTap: () {},
+        child: ListFilmsWidget(
+          width: 150,
+          height: 140,
+          title: "Novidades",
+          listImages: const [
+            'assets/images/abracadabra.png',
+            'assets/images/adão_Negro.png',
+            'assets/images/afera.png',
+            'assets/images/amaquinainfernal.png',
+            'assets/images/atena.png',
+            'assets/images/aterrorizante.png',
+            'assets/images/blackout.png',
+            'assets/images/gemini.png',
+            'assets/images/gerdia.png',
+            'assets/images/kili.png',
+            'assets/images/memedomal.png',
+            'assets/images/orfa_2.png',
+            'assets/images/pinoquio.png',
+            'assets/images/secreto.png',
+            'assets/images/trem_bala_fit.png',
+            'assets/images/trem_bala.png',
+          ],
+        ),
+      ),
+      GestureDetector(
+        onTap: () {},
+        child: ListFilmsWidget(
+          width: 150,
+          height: 140,
+          title: "Aventura",
+          listImages: const [
+            'assets/images/abracadabra.png',
+            'assets/images/adão_Negro.png',
+            'assets/images/afera.png',
+            'assets/images/amaquinainfernal.png',
+            'assets/images/atena.png',
+            'assets/images/aterrorizante.png',
+            'assets/images/blackout.png',
+            'assets/images/gemini.png',
+            'assets/images/gerdia.png',
+            'assets/images/kili.png',
+            'assets/images/memedomal.png',
+            'assets/images/orfa_2.png',
+            'assets/images/pinoquio.png',
+            'assets/images/secreto.png',
+            'assets/images/trem_bala_fit.png',
+            'assets/images/trem_bala.png',
+          ],
+        ),
+      ),
+      GestureDetector(
+        onTap: () {},
+        child: ListFilmsWidget(
+          width: 150,
+          height: 140,
+          title: "Suspense",
+          listImages: const [
+            'assets/images/abracadabra.png',
+            'assets/images/adão_Negro.png',
+            'assets/images/afera.png',
+            'assets/images/amaquinainfernal.png',
+            'assets/images/atena.png',
+            'assets/images/aterrorizante.png',
+            'assets/images/blackout.png',
+            'assets/images/gemini.png',
+            'assets/images/gerdia.png',
+            'assets/images/kili.png',
+            'assets/images/memedomal.png',
+            'assets/images/orfa_2.png',
+            'assets/images/pinoquio.png',
+            'assets/images/secreto.png',
+            'assets/images/trem_bala_fit.png',
+            'assets/images/trem_bala.png',
+          ],
+        ),
+      ),
+      GestureDetector(
+        onTap: () {},
+        child: ListFilmsWidget(
+          width: 150,
+          height: 140,
+          title: "Ficcao",
+          listImages: const [
+            'assets/images/abracadabra.png',
+            'assets/images/adão_Negro.png',
+            'assets/images/afera.png',
+            'assets/images/amaquinainfernal.png',
+            'assets/images/atena.png',
+            'assets/images/aterrorizante.png',
+            'assets/images/blackout.png',
+            'assets/images/gemini.png',
+            'assets/images/gerdia.png',
+            'assets/images/kili.png',
+            'assets/images/memedomal.png',
+            'assets/images/orfa_2.png',
+            'assets/images/pinoquio.png',
+            'assets/images/secreto.png',
+            'assets/images/trem_bala_fit.png',
+            'assets/images/trem_bala.png',
+          ],
+        ),
+      ),
+      GestureDetector(
+        onTap: () {},
+        child: ListFilmsWidget(
+          width: 150,
+          height: 140,
+          title: "Ficcao",
+          listImages: const [
+            'assets/images/abracadabra.png',
+            'assets/images/adão_Negro.png',
+            'assets/images/afera.png',
+            'assets/images/amaquinainfernal.png',
+            'assets/images/atena.png',
+            'assets/images/aterrorizante.png',
+            'assets/images/blackout.png',
+            'assets/images/gemini.png',
+            'assets/images/gerdia.png',
+            'assets/images/kili.png',
+            'assets/images/memedomal.png',
+            'assets/images/orfa_2.png',
+            'assets/images/pinoquio.png',
+            'assets/images/secreto.png',
+            'assets/images/trem_bala_fit.png',
+            'assets/images/trem_bala.png',
+          ],
+        ),
+      ),
+    ];
+
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: appBar,
       backgroundColor: Colors.black,
       body: SizedBox(
-        width: MediaQuery.of(context).size.height * 1.0,
-        height: MediaQuery.of(context).size.height * 1.0,
+        width: MediaQuery.of(context).size.width * 1.0,
         child: LayoutBuilder(
           builder: (ctx, constraints) {
             return Column(
-              children: <Widget>[
+              children: [
                 SizedBox(
-                  width: constraints.maxHeight * 1.0,
-                  height: constraints.maxHeight * 0.60,
-                  child: Image.asset(
-                    'assets/images/dogcup.png',
-                    fit: BoxFit.cover,
-                    alignment: Alignment.topCenter,
-                  ),
-                ),
-                GestureDetector(
-                  onTap: () {},
-                  child: ListFilmsWidget(
-                    width: 150,
-                    height: 100,
-                    title: "Novidades",
-                    listImages: const [
-                      'assets/images/dogclothes.png',
-                      'assets/images/dogcup.png',
-                      'assets/images/dogclothes.png',
-                      'assets/images/dogcup.png',
-                      'assets/images/dogcup.png',
-                      'assets/images/dogclothes.png',
-                      'assets/images/dogcup.png',
-                    ],
-                  ),
-                ),
-                GestureDetector(
-                  onTap: () {},
-                  child: ListFilmsWidget(
-                    width: 150,
-                    height: 100,
-                    title: "Novidades",
-                    listImages: const [
-                      'assets/images/dogclothes.png',
-                      'assets/images/dogcup.png',
-                      'assets/images/dogclothes.png',
-                      'assets/images/dogcup.png',
-                      'assets/images/dogcup.png',
-                      'assets/images/dogclothes.png',
-                      'assets/images/dogcup.png',
-                    ],
-                  ),
-                ),
-                GestureDetector(
-                  onTap: () {},
-                  child: ListFilmsWidget(
-                    width: 150,
-                    height: 100,
-                    title: "Novidades",
-                    listImages: const [
-                      'assets/images/dogclothes.png',
-                      'assets/images/dogcup.png',
-                      'assets/images/dogclothes.png',
-                      'assets/images/dogcup.png',
-                      'assets/images/dogcup.png',
-                      'assets/images/dogclothes.png',
-                      'assets/images/dogcup.png',
-                    ],
-                  ),
-                ),
-                GestureDetector(
-                  onTap: () {},
-                  child: ListFilmsWidget(
-                    width: 150,
-                    height: 100,
-                    title: "Novidades",
-                    listImages: const [
-                      'assets/images/dogclothes.png',
-                      'assets/images/dogcup.png',
-                      'assets/images/dogclothes.png',
-                      'assets/images/dogcup.png',
-                      'assets/images/dogcup.png',
-                      'assets/images/dogclothes.png',
-                      'assets/images/dogcup.png',
-                    ],
+                  height: MediaQuery.of(context).size.height * 0.80,
+                  child: ListView.builder(
+                    scrollDirection: Axis.vertical,
+                    itemCount: list.length,
+                    itemBuilder: (ctx, index) {
+                      final images = list[index];
+                      return Column(
+                        children: [
+                          SizedBox(child: images),
+                        ],
+                      );
+                    },
                   ),
                 ),
               ],
